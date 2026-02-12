@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Valentine's Day ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffebf0;
+            text-align: center;
+        }
+        header {
+            padding: 40px 20px;
+            background: #ff4f70;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .hero {
+            padding: 40px 20px;
+        }
+        .hero img {
+            width: 200px;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .msg {
+            font-size: 1.4rem;
+            margin: 20px auto;
+            max-width: 600px;
+            color: #d10043;
+            line-height: 1.8;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px 0;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 20px;
+            background: #ff4f70;
+            color: white;
+            margin-top: 40px;
+        }
+        .btn {
+            padding: 12px 25px;
+            background: #ff4f70;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #d10043;
+        }
+    </style>
+</head>
+<body>
+    <header>Happy Valentine's Day ❤️</header><section class="hero">
+    <img src="./WhatsApp Image 2026-02-06 at 11.15.02 PM.jpeg" alt="Love Illustration" />
+    <div class="msg">
+        My love, this day is special because you're in my life. 
+        Every moment with you feels magical. 💖<br><br>
+        This small website is just to remind you how important you are to me.
+    </div>
+    <button class="btn" onclick="alert('I Love You ❤️')">Click Me</button>
+</section>
+
+<h2 style="color:#d10043; margin-top:40px;">Our Sweet Memories 📸</h2>
+<section class="gallery">
+     <img src ="./WhatsApp Image 2026-02-06 at 10.55.01 PM.jpeg" alt="">
+     <img src="./WhatsApp Image 2026-02-06 at 10.55.02 PM.jpeg" alt="">
+     <img src="./WhatsApp Image 2026-02-06 at 10.55.03 PM.jpeg" alt="">
+     <img src="./WhatsApp Image 2026-02-06 at 10.55.04 PM.jpeg" alt="">
+</section>
+
+<div class="footer">Forever Yours ❤️</div>
+<section style="padding:40px 20px; background:#fff0f6; margin:40px 20px; border-radius:20px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+    <h2 style="color:#820029;">Secret Love Letter 💌</h2>
+    <p style="font-size:1.3rem; color:#820029; max-width:700px; margin:20px auto; line-height:1.8;">
+        My dearest love,<br><br>
+        I just want you to know that no matter how many days pass, no matter where life takes us,
+        my heart will always find its way back to you. You are my happiness, my comfort, and my forever.
+        Every moment with you feels like a beautiful story I never want to end.
+        Thank you for being the most special part of my life. ❤️
+        <br><br>Forever yours.
+    </p>
+</section>
+
+<!-- Heart Opening Animation -->
+<style>
+    .heart-container {
+        margin: 50px auto;
+        width: 150px;
+        height: 150px;
+        position: relative;
+        cursor: pointer;
+    }
+    .heart {
+        width: 150px;
+        height: 150px;
+        background: #ff4f70;
+        position: absolute;
+        transform: rotate(45deg);
+        animation: heartbeat 1.5s infinite;
+    }
+    .heart:before,
+    .heart:after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        background: #ff4f70;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .heart:before {
+        top: -75px;
+        left: 0;
+    }
+    .heart:after {
+        left: -75px;
+        top: 0;
+    }
+    @keyframes heartbeat {
+        0%, 100% { transform: rotate(45deg) scale(1); }
+        50% { transform: rotate(45deg) scale(1.1); }
+    }
+
+    /* Password Section */
+    #secretSection {
+        display: none;
+        padding: 30px;
+        background: #ffe6f0;
+        border-radius: 20px;
+        margin: 40px 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    #passwordBox {
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 20px;
+        max-width: 350px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    input[type="password"] {
+        padding: 10px;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px solid #ff4f70;
+    }
+    .unlockBtn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background: #ff4f70;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="heart-container" onclick="openHeart()">
+    <div class="heart"></div>
+</div>
+
+<div id="passwordBox">
+    <h3 style="color:#d10043;">Only For You ❤️</h3>
+    <input type="password" id="pass" placeholder="Enter Password">
+    <button class="unlockBtn" onclick="unlock()">Unlock</button>
+    <p id="error" style="color:red; display:none;">Wrong Password 😢</p>
+</div>
+
+<div id="secretSection">
+    <h2 style="color:#d10043;">My Private Message Just For You 💕</h2>
+    <p style="font-size:1.3rem; color:#c2003a; line-height:1.8; max-width:700px; margin:auto;">
+        I’m waiting for the day when ‘you and me’ becomes ‘we’❤️
+    </p>
+</div>
+
+<script>
+    function openHeart() {
+        alert("This heart opens only for you ❤️");
+    }
+
+    function unlock() {
+        const pwd = document.getElementById('pass').value;
+        if (pwd === "Keethi22") {
+            document.getElementById('secretSection').style.display = 'block';
+            document.getElementById('passwordBox').style.display = 'none';
+        } else {
+            document.getElementById('error').style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
